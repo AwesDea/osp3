@@ -3,7 +3,7 @@ sudo: true
 script:
   - export REPO_ROOT="/home/travis/build/AwesDea/osp3"
   - sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
-  - sudo apt update
+  - sudo apt-get update
   - sudo apt-get install linux-headers-$(uname -r)
   - sudo apt-get install build-essential fakeroot
   - sudo apt-get install gcc-5 g++-5
