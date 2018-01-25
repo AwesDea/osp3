@@ -13,6 +13,7 @@ script:
   - patch -p1 < FIFO.patch
   - fakeroot make -j $(nproc) deb-pkg
   - cd ..
+  - ls
   - ls -la
 after_success:
   - echo success
