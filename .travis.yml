@@ -11,6 +11,7 @@ script:
   - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 1
   - cd $REPO_ROOT/
   - patch -p1 < FIFO.patch
+  - sudo make clean
   - fakeroot make -j $(nproc) deb-pkg
   - cd ..
   - ls
