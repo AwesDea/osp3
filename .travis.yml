@@ -10,7 +10,8 @@ script:
   - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 60 --slave /usr/bin/g++ g++ /usr/bin/g++-5
   - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 1
   - cd $REPO_ROOT/
-  - patch -p1 < FIFO.patch
+  - pwd
+  - patch -p1 < FIFO.patch || exit
   - sudo make clean
   - fakeroot make -j $(nproc) deb-pkg
   - cd ..
