@@ -1,4 +1,6 @@
-        Linux kernel release 4.x <http://kernel.org/>
+[![Build Status](https://travis-ci.org/AwesDea/osp3.svg?branch=master)](https://travis-ci.org/AwesDea/osp3)
+ 
+ Linux kernel release 4.x <http://kernel.org/>
 
 These are the release notes for Linux version 4.  Read them carefully,
 as they tell you what this is all about, explain how to install the
