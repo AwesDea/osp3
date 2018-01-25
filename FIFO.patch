@@ -1,7 +1,7 @@
-diff --git a/kernel/sched/core.c b/kernel/sched/core.c
+diff --git a/sched/core.c b/sched/core.c
 index 1df6da00..05c9aa33 100644
---- a/kernel/sched/core.c
-+++ b/kernel/sched/core.c
+--- a/sched/core.c
++++ b/sched/core.c
 @@ -2262,7 +2262,7 @@ int sched_fork(unsigned long clone_flags, struct task_struct *p)
  	/*
  	 * Make sure we do not leak PI boosting priority to the child.
@@ -38,10 +38,10 @@ index 1df6da00..05c9aa33 100644
  	return __sched_setscheduler(p, &attr, check, true);
  }
  /**
-diff --git a/kernel/sched/rt.c b/kernel/sched/rt.c
+diff --git a/sched/rt.c b/sched/rt.c
 index 541b8494..2d6ee020 100644
---- a/kernel/sched/rt.c
-+++ b/kernel/sched/rt.c
+--- a/sched/rt.c
++++ b/sched/rt.c
 @@ -2319,6 +2319,7 @@ static void task_tick_rt(struct rq *rq, struct task_struct *p, int queued)
  	 * RR tasks need a special form of timeslice management.
  	 * FIFO tasks have no timeslices.
